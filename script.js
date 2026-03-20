@@ -1,7 +1,6 @@
 import { createInterface } from "readline";
 
 const options = ["rock", "paper", "scissors"];
-let userOption = "";
 let scoreboard = [0, 0];
 
 const rl = createInterface({
@@ -19,7 +18,7 @@ function questionText() {
 }
 
 function calculateWinner(selectionNumber) {
-    userOption = options[selectionNumber - 1];
+    const userOption = options[selectionNumber - 1];
     const computerOption = getComputerOption();
     console.log(`Your selection: ${userOption}`);
     console.log(`CPU's selection: ${computerOption}`);
