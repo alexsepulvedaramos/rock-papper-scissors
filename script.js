@@ -52,6 +52,7 @@ function askUserOption() {
             return;
         } else if (selectionNumber === 4) {
             rl.close();
+            return;
         }
 
         calculateWinner(selectionNumber);
